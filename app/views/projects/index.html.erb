@@ -4,4 +4,4 @@
 
 <%= render @projects %>
 
-<%= link_to 'New Project', new_project_path %>
+<%= link_to('New Project', new_project_path) if current_admin %>
