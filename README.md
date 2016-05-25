@@ -41,3 +41,10 @@
 - git push heroku master
 
 *layouts and partials*
+
+- rails g controller Home index about contact
+- git push origin master
+- git push heroku master
+- heroku open
+
+*home controller*
