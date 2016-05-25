@@ -1,22 +1,23 @@
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<p>
-  <strong>Project link:</strong>
-  <%= @project.project_link %>
-</p>
-
-<p>
-  <strong>Website link:</strong>
-  <%= @project.website_link %>
-</p>
-
+<h1>Showing Project</h1>
+<table class="table">
+  <tbody>
+    <tr>
+      <th><strong>Title:</strong></th>
+      <td><%= @project.title %></td>
+    </tr>
+    <tr>
+      <th><strong>Description:</strong></th>
+      <td><%= @project.description %></td>
+    </tr>
+    <tr>
+      <th><strong>Project link:</strong></th>
+      <td><%= @project.project_link %></td>
+    </tr>
+    <tr>
+      <th><strong>Website link:</strong></th>
+      <td><%= @project.website_link %></td>
+    </tr>
+  </tbody>
+</table>
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
