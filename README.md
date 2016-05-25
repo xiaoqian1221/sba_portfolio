@@ -1,6 +1,5 @@
 # SBA Portfolio
 
-
 ### Commands used:
 
 - rails new sba_portfolio -d mysql
@@ -48,3 +47,12 @@
 - heroku open
 
 *home controller*
+
+- rails g scaffold Projects title description:text project_link website_link
+- rake db:migrate
+- git push origin master
+- git push heroku master
+- heroku run rake db:migrate
+- heroku open
+
+*projects scaffold, permission check and partials*

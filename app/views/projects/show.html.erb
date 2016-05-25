@@ -1,0 +1,22 @@
+<p>
+  <strong>Title:</strong>
+  <%= @project.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Project link:</strong>
+  <%= @project.project_link %>
+</p>
+
+<p>
+  <strong>Website link:</strong>
+  <%= @project.website_link %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
