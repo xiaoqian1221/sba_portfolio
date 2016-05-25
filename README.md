@@ -2,7 +2,7 @@
 
 ### Commands used:
 
-- rails new sba_portfolio -d mysql
+- rails new sba_portfolio (use -d mysql to avoid mysql commit)
 - bundle
 - heroku create
 - git push origin master
