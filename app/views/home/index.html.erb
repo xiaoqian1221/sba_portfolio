@@ -1,7 +1,10 @@
 <h1>All Projects</h1>
 
 <br>
-
-<%= render partial: 'projects/summary', collection: @projects, as: :project %>
+<% if @projects ? any %>
+  <%= render partial: 'projects/summary', collection: @projects, as: :project %>
+<% else %>
+  <h3>No Project.</h3>
+<% end %>
 
 <%= link_to('New Project', new_project_path) if current_admin %>
