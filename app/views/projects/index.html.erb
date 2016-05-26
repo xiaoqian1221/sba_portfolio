@@ -1,10 +1,6 @@
 <h1>Listing Projects</h1>
 
 <br>
-<% if @projects ? any %>
-  <%= render @projects %>
-<% else %>
-  <h3>No Project.</h3>
-<% end %>
+<%= render @projects %>
 
 <%= link_to('New Project', new_project_path) if current_admin %>
